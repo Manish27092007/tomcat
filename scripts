@@ -2,4 +2,17 @@
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
 
 #unzip the tar file
-tar
+tar xvzf apache-tomcat-9.0.91.tar.gz
+
+
+#changing pass and username
+vim apache-tomcat-9.0.91/conf/tomcat-users.xml
+
+#change to 
+
+
+#dalete line 21 qand 22
+vim apache-tomcat-9.0.91/webapps/manager/META-INF/context.xml
+
+
+#starting tomcat
